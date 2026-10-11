@@ -24,3 +24,21 @@ const myfunction=function(){
     console.log("Hello World")
 }
 console.log(typeof outsideTemp);
+
+// ++++++++++++++++++++++++++++++++++++++++
+//stack(primitive)(copy milegi) ,Heap(non-primitive)(original value milegi)
+let myYoutubename="abhiyoutube"   //stack
+let anothername=myYoutubename
+anothername="vishiyoutube"
+console.log(myYoutubename) 
+console.log(anothername) // because here we gave the copy
+
+//now we take the example of user data type
+let userOne = {
+    email:"abhi@google.com",
+    upi: "user@ybl"
+}
+let userTwo=userOne;
+userTwo.email="vishi@google.com"
+console.log(userOne.email);
+console.log(userTwo.email); //here we gave the exact value we use the heap type of memory
